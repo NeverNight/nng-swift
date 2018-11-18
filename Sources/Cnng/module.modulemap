@@ -1,0 +1,5 @@
+module Cnng [system] {
+    header "shim.h"
+    link "nng"
+    export *
+}

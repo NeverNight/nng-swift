@@ -8,8 +8,8 @@
 // found online at https://opensource.org/licenses/MIT.
 //
 
-#ifndef NNG_TRANSPORT_IPC_IPC_H
-#define NNG_TRANSPORT_IPC_IPC_H
+#ifndef NNG_TRANSPORT_TLS_TLS_H
+#define NNG_TRANSPORT_TLS_TLS_H
 
 #include <nng/nng.h>
 
@@ -17,13 +17,12 @@
 extern "C" {
 #endif
 
-// ipc transport.  This is used for inter-process communication on
-// the same host computer.
+// TLS transport.  This is used for communication via TLS v1.2 over TCP/IP.
 
-NNG_DECL int nng_ipc_register(void);
+NNG_DECL int nng_tls_register(void);
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif // NNG_TRANSPORT_IPC_IPC_H
+#endif // NNG_TRANSPORT_TLS_TLS_H
